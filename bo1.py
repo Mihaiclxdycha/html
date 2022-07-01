@@ -78,7 +78,7 @@ timezz = int(time.time())+300
 while az==True:
     time.sleep(1)
     if(timezz<int(time.time())):
-        cockz
+        rrawr
     try:
         driver.find_element(By.XPATH,"/html/body/div[3]/div/div[1]/button").click()
         time.sleep(1)
