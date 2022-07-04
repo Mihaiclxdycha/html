@@ -55,7 +55,7 @@ driver.find_element(By.XPATH,"/html/body/div/div/div[2]/main/div/form/div/div[4]
 time.sleep(1)
 driver.find_element(By.XPATH,"/html/body/div/div/div[2]/main/div/form/div/div[5]/button").click()
 time.sleep(1)
-timez = int(time.time())+300
+timez = int(time.time())+1200
 while a==True:
     try:
         if(driver.find_element(By.XPATH,"/html/body/div/div/div[2]/main/div/form/div/div[5]/button/span").text=="Create account"):
