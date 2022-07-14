@@ -55,8 +55,9 @@ driver.find_element(By.XPATH,"/html/body/div/div/div[2]/main/div/form/div/div[4]
 time.sleep(1)
 driver.find_element(By.XPATH,"/html/body/div/div/div[2]/main/div/form/div/div[5]/button").click()
 time.sleep(1)
-timez = int(time.time())+1200
+timez = int(time.time())+3000
 while a==True:
+    driver.switch_to.window(driver.window_handles[0])
     try:
         if(driver.find_element(By.XPATH,"/html/body/div/div/div[2]/main/div/form/div/div[5]/button/span").text=="Create account"):
             time.sleep(1)
@@ -66,7 +67,7 @@ while a==True:
     if(timez<int(time.time())):
         cockz
     if(driver.current_url.startswith("https://replit.com/signup")):
-        time.sleep(0.4)
+        time.sleep(0.25)
     else:
         a = False
 time.sleep(3)
